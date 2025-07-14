@@ -3,7 +3,6 @@ from ..modelos import Cliente, Pet
 from . import OperacaoCancelada     
 
 def cadastrar_pet(clientes: List[Cliente]) -> None:
-
     print("\n--- Cadastro de Novo Pet ---")
 
     if not clientes:
