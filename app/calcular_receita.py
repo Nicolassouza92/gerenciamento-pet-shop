@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List
-from ..modelos import Cliente
-from . import OperacaoCancelada
+from modelos import Cliente
+from app import OperacaoCancelada
 
 def calcular_receita(clientes: List[Cliente]) -> None:
     print("\n--- Cálculo de Receita por Período ---")
