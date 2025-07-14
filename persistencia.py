@@ -1,6 +1,6 @@
 import json
 from typing import List, Dict, Any
-from .modelos import Cliente # Importa a classe Cliente de modelos.py
+from .modelos import Cliente
 
 NOME_ARQUIVO_DADOS = "dados_petshop.json" # Definindo como uma constante
 
