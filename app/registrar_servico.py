@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List
-from ..modelos import Cliente, Servico
-from . import OperacaoCancelada      
+from modelos import Cliente, Servico
+from app import OperacaoCancelada    
 
 def registrar_servico(clientes: List[Cliente]) -> None:
     print("\n--- Registro de Novo Serviço ---")
