@@ -1,6 +1,6 @@
 from typing import List
-from ..modelos import Cliente, Pet  
-from . import OperacaoCancelada     
+from modelos import Cliente, Pet
+from app import OperacaoCancelada   
 
 def cadastrar_pet(clientes: List[Cliente]) -> None:
     print("\n--- Cadastro de Novo Pet ---")
@@ -9,13 +9,11 @@ def cadastrar_pet(clientes: List[Cliente]) -> None:
         print("Nenhum cliente cadastrado. Cadastre um cliente primeiro.")
         return
 
-    # Lista os clientes para o usuário escolher
     print("Clientes disponíveis:")
     for i, cliente in enumerate(clientes):
         print(f"  {i}: {cliente.nome}")
 
     try:
-        # Loop para escolher um cliente válido
         while True:
             try:
                 indice_cliente_str = input("Digite o índice do cliente (ou 'C' para cancelar): ")
@@ -65,7 +63,6 @@ def cadastrar_pet(clientes: List[Cliente]) -> None:
             except ValueError:
                 print("Idade inválida. Por favor, digite um número inteiro.")
 
-        # Cria e adiciona o pet ao cliente
         novo_pet = Pet(nome=nome_pet, especie=especie, peso=peso, idade=idade)
         cliente_selecionado.pets.append(novo_pet)
         

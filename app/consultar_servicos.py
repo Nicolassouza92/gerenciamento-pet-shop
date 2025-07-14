@@ -1,6 +1,6 @@
 from typing import List
-from ..modelos import Cliente
-from . import OperacaoCancelada
+from modelos import Cliente
+from app import OperacaoCancelada
 
 def consultar_servicos(clientes: List[Cliente]) -> None:
     print("\n--- Consulta de Serviços ---")
